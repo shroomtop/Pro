@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-900 text-white">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GPT Website Builder Pro | Shroomtop420™</title>
+  <meta name="description" content="Self-contained GPT site builder with Stripe paywall. Created by Shroomtop420™.">
+  <link rel="icon" href="https://shroomtop.github.io/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    ::selection { background: #10b981; color: black; }
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body class="font-mono p-6 space-y-10 max-w-3xl mx-auto">
+
+  <header class="text-center space-y-2">
+    <h1 class="text-3xl font-extrabold text-lime-400">Ξ GPT Website Builder Pro</h1>
+    <p class="text-gray-400">Deploy GPT-powered websites instantly with monetization included.</p>
+  </header>
+
+  <main class="space-y-6">
+    <section class="glass p-4 rounded">
+      <h2 class="text-xl font-semibold mb-2 text-white">How It Works</h2>
+      <ul class="list-disc list-inside text-sm space-y-1 text-gray-300">
+        <li>Generates a branded HTML5 site with embedded GPT or AI tool</li>
+        <li>Auto-bundles LICENSE.txt, promptmeta.json, and README.txt</li>
+        <li>Uses Stripe to gate ZIP delivery with your payment link</li>
+        <li>Offline-first, no dependencies, mobile-ready</li>
+      </ul>
+    </section>
+
+    <section class="glass p-4 rounded space-y-2">
+      <h2 class="text-lg font-semibold text-white">Buy to Unlock</h2>
+      <a href="https://buy.stripe.com/3cs162ggTdSm3WEaEE" target="_blank"
+         class="block bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3 px-6 rounded text-center transition">
+        Pay $99.99 to Unlock ZIP Download
+      </a>
+    </section>
+
+    <section class="glass p-4 rounded text-sm text-gray-400">
+      <p>This builder delivers an instantly deployable ZIP archive containing your custom HTML+JS+GPT site, Stripe integration, licensing, and resale readiness. No backend needed. Includes monetization hooks and antifragile deployment logic.</p>
+    </section>
+  </main>
+
+  <footer class="text-center text-xs text-gray-600 border-t border-gray-700 pt-4">
+    &copy; 2025 Shroomtop420™ — All rights reserved.
+  </footer>
+
+  <script type="module">
+    // You could expand this logic to fetch payment confirmation or license status before allowing ZIP download
+    const paywall = true;
+    if (paywall) {
+      console.info("Payment required to unlock this service. Redirected to Stripe.");
+    }
+  </script>
+</body>
+</html>
